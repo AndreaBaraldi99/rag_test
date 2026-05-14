@@ -50,7 +50,7 @@ def get_vector_store():
 @st.cache_resource
 def get_agent(_vector_store):
     st.sidebar.info("Initializing Agent...")
-    model = init_chat_model(model="gemini-3-flash-preview", model_provider="google_genai")
+    model = init_chat_model(model="gemini-2.5-flash", model_provider="google_genai")
     
     @dynamic_prompt
     def prompt_with_context(request: ModelRequest) -> str:
