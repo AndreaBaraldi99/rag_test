@@ -14,7 +14,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # 1. Setup Streamlit page configuration
 st.set_page_config(page_title="RAG Chatbot", page_icon="🤖", layout="centered")
-st.title("🤖 Chatbot with Context & Memory")
+st.title("🤖 Chatbot per la sessione che consuma acqua ma ti fa passare gli esami")
 
 # 2. Get API Keys gracefully from environment or user input
 google_api_key = st.sidebar.text_input("Enter your Google AI API key:", type="password")
